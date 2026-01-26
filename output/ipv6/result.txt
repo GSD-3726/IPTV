@@ -1,5 +1,5 @@
 🕘️更新时间,#genre#
-2026-01-27 04:41:20,https://migu.188766.xyz/?migutoken=6585eea65e3309a16c9e503b71aa963d&id=CCTV1&type=yy
+2026-01-27 06:36:34,https://migu.188766.xyz/?migutoken=6585eea65e3309a16c9e503b71aa963d&id=CCTV1&type=yy
 
 📺央视频道,#genre#
 CCTV-1,https://migu.188766.xyz/?migutoken=6585eea65e3309a16c9e503b71aa963d&id=CCTV1&type=yy
@@ -19,12 +19,12 @@ CETV-4,https://migu.188766.xyz/?migutoken=2549ccd34502f74bb6cdf1e9bdcd09a8&id=CE
 
 📡卫视频道,#genre#
 香港卫视,http://webcast.hkstv.tv/livestream/mutfysrq/playlist.m3u8
-浙江卫视,https://migu.188766.xyz/?migutoken=3fd723b87b926c94e1e4c7f4b829f1f5&id=%E6%B5%99%E6%B1%9F%E5%8D%AB%E8%A7%86&pp=1
-浙江卫视,https://migu.188766.xyz/?migutoken=4167c0b453295f1c015a56126a35a1f5&id=z_jws&type=sz
-浙江卫视,https://migu.188766.xyz/?migutoken=56b63527667557be6a4290b68d4364f4&id=z_jws&type=sz
 浙江卫视,https://migu.188766.xyz/?migutoken=da0771192d7e8739c37fae3ac6b6a813&id=%E6%B5%99%E6%B1%9F%E5%8D%AB%E8%A7%86&pp=1
-湖南卫视,https://migu.188766.xyz/?migutoken=b450343702879b0ae0c6739c1ab49ad5&id=%E6%B9%96%E5%8D%97%E5%8D%AB%E8%A7%864K&pp=1
+浙江卫视,https://migu.188766.xyz/?migutoken=3fd723b87b926c94e1e4c7f4b829f1f5&id=%E6%B5%99%E6%B1%9F%E5%8D%AB%E8%A7%86&pp=1
+浙江卫视,https://migu.188766.xyz/?migutoken=56b63527667557be6a4290b68d4364f4&id=z_jws&type=sz
+浙江卫视,https://migu.188766.xyz/?migutoken=4167c0b453295f1c015a56126a35a1f5&id=z_jws&type=sz
 湖南卫视,https://migu.188766.xyz/?migutoken=0f84bc78157e4b5c5af5f0b1eed43967&id=hnws&type=sz
+湖南卫视,https://migu.188766.xyz/?migutoken=b450343702879b0ae0c6739c1ab49ad5&id=%E6%B9%96%E5%8D%97%E5%8D%AB%E8%A7%864K&pp=1
 湖南卫视,https://migu.188766.xyz/?migutoken=09146378cea3cb4b8cbfab691f63c360&id=%E6%B9%96%E5%8D%97%E5%8D%AB%E8%A7%864K&pp=1
 重庆卫视,http://iptv.huuc.edu.cn/hls/cqhd.m3u8
 重庆卫视,http://[2409:8087:3c02:0021:0000:0001:0000:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000341/index.m3u8?IASHttpSessionId=
@@ -33,8 +33,8 @@ CETV-4,https://migu.188766.xyz/?migutoken=2549ccd34502f74bb6cdf1e9bdcd09a8&id=CE
 广西卫视,https://hlscdn.liangtv.cn/live/de0f97348eb84f62aa6b7d8cf0430770/dd505d87880c478f901f38560ca4d4e6.m3u8
 海南卫视,https://migu.188766.xyz/?migutoken=a970000bd9b0da2429ffdcec02f296e6&id=hn_hnws&type=sz
 河南卫视,http://tvcdn.stream3.hndt.com/tv/65c4a6d5017e1000b2b6ea2500000000_transios/playlist.m3u8?wsSecret=2bd4a38415591d7dd0b392cb91a1e936&wsTime=1769471946
+河南卫视,http://tvcdn.stream3.hndt.com/tv/65c4a6d5017e1000b2b6ea2500000000_transios/playlist.m3u8?wsSecret=84221de9d2a41f35c89fd912c8550290&wsTime=1769479206
 河南卫视,https://migu.188766.xyz/?migutoken=05f4e70c78817b762dc8a3078e05ae03&id=%E6%B2%B3%E5%8D%97%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85&type=yy
-河南卫视,http://tvcdn.stream3.hndt.com/tv/65c4a6d5017e1000b2b6ea2500000000_transios/playlist.m3u8?wsSecret=a122d1bed2f96e949da7e536aa410aee&wsTime=1769464662
 内蒙古卫视,https://migu.188766.xyz/?migutoken=f54938e1271124454e485bcf4606a9be&id=%E5%86%85%E8%92%99%E5%8F%A4%E5%8D%AB%E8%A7%86&pp=1
 陕西卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/shan3xiws/57/20220809/index.m3u8?msisdn=&mtv_session=&HlsSubType=1&HlsProfileId=1&nphaid=0&encrypt=
 三沙卫视,https://migu.188766.xyz/?migutoken=816f53df693e62f4ea788c4b5a76bc44&id=hn_ssws&type=sz
