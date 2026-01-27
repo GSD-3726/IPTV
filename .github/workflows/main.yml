@@ -2,44 +2,67 @@ name: 'Update schedule'
 
 on:
   schedule:
+    # 每2小时执行一次，原有定时策略不变
     - cron: '0 */2 * * *'
   workflow_dispatch:
+    # 支持手动触发，指定分支
     branches:
       - master
       - dev
       - gd
+
 jobs:
   push:
     runs-on: ${{ matrix.operating-system }}
     strategy:
       matrix:
+        # 仅使用 Ubuntu 最新版，原有配置不变
         operating-system: [ 'ubuntu-latest' ]
     steps:
+      # 步骤1：设置分支名称（原有逻辑，根据仓库所有者判断分支）
       - name: Set branch name
         id: vars
         run: echo "BRANCH_NAME=${{ github.repository_owner == 'Guovin' && 'gd' || 'master' }}" >> $GITHUB_ENV
+
+      # 步骤2：拉取代码，指定对应分支
       - uses: actions/checkout@v3
         with:
           ref: ${{ env.BRANCH_NAME }}
+
+      # 步骤3：配置 Python 3.13 环境，开启 Pipenv 缓存加速
       - name: Run with setup-python 3.13
         uses: actions/setup-python@v4
         with:
           python-version: '3.13'
           update-environment: true
           cache: 'pipenv'
-      - name: Install FFmpeg
-        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      # 步骤4：安装 FFmpeg + lxml 编译所需系统依赖（核心修复点1）
+      - name: Install FFmpeg and lxml system build dependencies
+        run: |
+          sudo apt-get update && sudo apt-get install -y ffmpeg
+          # 安装 lxml 编译必需的底层库，Ubuntu 专属
+          sudo apt-get install -y libxml2-dev libxslt1-dev
+
+      # 步骤5：安装 Pipenv 工具
       - name: Install pipenv
         run: pip3 install --user pipenv
-      - name: Install dependecies
+
+      # 步骤6：初始化 Pipenv 并安装项目依赖（修正拼写错误：dependecies → dependencies）
+      - name: Install dependencies
         run: pipenv --python 3.13 && pipenv install --deploy
+
+      # 步骤7：执行项目 dev 命令（原有业务逻辑）
       - name: Update
         run: pipenv run dev
+
+      # 步骤8：自动提交并推送变更（原有逻辑，无修改）
       - name: Commit and push if changed
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add .
+          # 仅当有文件变更时才提交推送
           if ! git diff --staged --quiet; then
             git commit -m "Github Action Auto Updated"
             git push --force
